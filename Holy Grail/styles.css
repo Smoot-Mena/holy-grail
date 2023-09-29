@@ -1,0 +1,97 @@
+/********************* 
+    Global Settings 
+*********************/
+
+/* Making a clean slate */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: snow;
+    text-align: justify;
+}
+
+/* Setting up the background colors */
+:root {
+    --backgroundColor1: dodgerblue;
+    --backgroundColor2: royalblue;
+    --backgroundColor3: darkgrey;
+}
+
+header,
+footer {
+    background-color: var(--backgroundColor1);
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 5vh 0;
+    margin: 3vh 2vw;
+    width: 96vw;
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+}
+
+nav,
+aside {
+    background-color: var(--backgroundColor2);
+}
+
+nav,
+main,
+aside {
+    height: 60vh;
+}
+
+nav {
+    font-size: 2.5em;
+    width: 20vw;
+    top: 20vh;
+    left: 2vw;
+    padding: 3vh 7vw;
+    position: relative;
+}
+
+nav > a {
+    text-decoration: none;
+    display: flex;
+    line-height: 4em;
+}
+
+main {
+    font-size: 1.5em;
+    background-color: var(--backgroundColor3);
+    top: -40vh;
+    left: 23vw;
+    width: 49vw;
+    position: relative;
+    padding: 2vh 3vw;
+    line-height: 1.35em;
+}
+
+#quote {
+    font-size: 1.7em;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+aside {
+    top: 20vh;
+    right: 2vw;
+    width: 25vw;
+    position: fixed;
+    padding: 2vh 2vw;
+    font-size: 16px;
+    line-height: 3em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/******* END OF FILE!!! *******/
